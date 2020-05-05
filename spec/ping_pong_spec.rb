@@ -9,4 +9,8 @@ describe('Integer#ping_pong') do
   it("replaces multiples of three with ping as a string in the array") do
     expect(ping_pong(3)).to(eq([1,2,"ping"]))
   end
+
+  it('replaces multiples of five with pong as a string in the array') do
+    expect(ping_pong(5)).to(eq([1,2,"ping",4,"pong"]))
+  end
 end
