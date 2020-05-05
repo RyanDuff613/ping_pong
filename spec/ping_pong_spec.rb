@@ -1,8 +1,8 @@
 require('rspec')
 require('ping_pong')
 
-describe('ping_pong') do
-  it("counts from 1 to given number") do
-    expect(2).to eq([1,2])
+describe('Integer#ping_pong') do
+  it("returns array counting up to given number") do
+    expect(ping_pong(2)).to(eq([1,2]))
   end
 end
